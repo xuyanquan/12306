@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<style>
+		.form-horizontal {
+			width: 500px;
+		}
+		#find1 a,#find a {
+			margin-right: 10px;
+		}
+		#table span {
+			display: inline-block;
+			min-width: 80px;
+		}
+		#tujing span {
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="clearfix">
+		<form class="form-horizontal pull-left">
+		  <div class="form-group">
+		    <label class="col-sm-2 control-label">始发站</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="start" placeholder="始发站">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label class="col-sm-2 control-label">终点站</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="end" placeholder="终点站">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label class="col-sm-2 control-label">日期</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="date" placeholder="xxxx-xx-xx">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button id="search" type="button" class="btn btn-default">查询</button>
+		    </div>
+		  </div>
+		</form>
+		<form class="form-horizontal pull-left" id="find">
+		</form>
+		<form class="form-horizontal pull-left" id="find1">
+		</form>
+	</div>
+	<div class="clearfix">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th style="width:70px;">车次</th>
+					<th style="width:70px;">出发</th>
+					<th style="width:70px;">历时</th>
+					<th style="width:70px;">到达</th>
+					<th style="width:260px;">座位 | 票数 | 价格</th>
+					<th style="width:70px;">途径</th>
+				</tr>
+			</thead>
+			<tbody id="table"></tbody>
+		</table>
+	</div>
+	<div class="clearfix">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th style="width:70px;">途经</th>
+					<th style="width:70px;">到站</th>
+					<th style="width:70px;">出发</th>
+					<th style="width:70px;">停留</th>
+				</tr>
+			</thead>
+			<tbody id="tujing"></tbody>
+		</table>
+	</div>
+	<script src="dist/station_name.js"></script>
+	<script src="dist/favorite_name.js"></script>
+	<script src="dist/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

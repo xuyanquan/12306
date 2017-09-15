@@ -1,0 +1,23 @@
+{
+  "name": "12306",
+  "version": "1.0.0",
+  "description": "12306火车票个人业余学习，资源共享学习，不用于商业用途。",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuyanquan/12306.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuyanquan/12306/issues"
+  },
+  "homepage": "https://github.com/xuyanquan/12306#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
